@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./default.png" type="Other"
+	xmlns="http://knime.org/node/v2.10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+	<name>Fast Cluster Silhouette</name>
+
+	<shortDescription>
+		Allows computing the squared Euclidean Silhouette (score of a clustering) as a distributed algorithm.
+	</shortDescription>
+
+	<fullDescription>
+		<intro>
+			Based on the clustering model it computes the
+			<a href="https://en.wikipedia.org/wiki/Silhouette_(clustering)">Silhouette</a>
+			validity measure of the clustering.
+			The value close to
+			<tt>1</tt>
+			means good clustering, close to
+			<tt>-1</tt>
+			means bad clustering, all values are in between.
+		</intro>
+		<option name="Measure">The measure used in Silhouette computation,
+			currently only Squared Euclidean is supported.
+		</option>
+		<option name="Label">The label column. If a nominal column is selected,
+			that will be used instead of the PMML clustering model.
+		</option>
+		<!-- possibly more options that can also be grouped by tabs -->
+		<!-- <tab name="Standard Options"> <option name="short name of first option 
+			(like in the dialog)">description of first option</option> <option name="short 
+			name of second option (like in the dialog)">description of second option</option> 
+			</tab> <tab name="Advanced Options"> <option name="short name of first advanced 
+			option (like in the dialog)">description of first advanced option</option> 
+			</tab> -->
+	</fullDescription>
+
+	<ports>
+		<inPort index="0" name="Model">PMML clustering model
+		</inPort>
+		<inPort index="1" name="Data">Input data compatible with the
+			clustering model
+		</inPort>
+		<!-- possibly more input ports here -->
+		<outPort index="0" name="Silhouette value">The single silhouette value
+		</outPort>
+		<!-- possibly more output ports here -->
+	</ports>
+	<!-- views>
+		<!- -view index="1" name="name of second view">Description of second view...</view - ->
+	</views-->
+</knimeNode>

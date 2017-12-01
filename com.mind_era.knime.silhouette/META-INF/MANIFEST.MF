@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FastSilhouette-Node extension for KNIME Workbench
+Bundle-SymbolicName: com.mind_era.knime.silhouette; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: fastsilhouette.jar
+Bundle-Activator: com.mind_era.knime.silhouette.internal.FastSilhouetteNodePlugin
+Bundle-Vendor: Mind Eratosthenes Kft.
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base,
+ org.knime.core.pmml,
+ org.knime.core,
+ org.apache.commons.math3;bundle-version="3.4.1"
+Bundle-ActivationPolicy: lazy
+Export-Package: com.mind_era.knime.silhouette
+
