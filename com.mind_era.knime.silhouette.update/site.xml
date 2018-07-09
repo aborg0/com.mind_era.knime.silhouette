@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.mind_era.silhouette.feature_0.0.0.qualifier.jar" id="com.mind_era.silhouette.feature" version="0.0.0.qualifier">
+      <category name="knime_cluster_measures"/>
+   </feature>
+   <category-def name="knime_cluster_measures" label="KNIME cluster measures">
+      <description>
+         Measures to evaluate cluster model performance
+      </description>
+   </category-def>
+</site>

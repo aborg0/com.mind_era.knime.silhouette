@@ -18,8 +18,7 @@
          point="org.knime.workbench.repository.nodes">
       <node
             category-path="/"
-            factory-class="com.mind_era.knime.silhouette.FastSilhouetteNodeFactory"
-            id="com.mind_era.knime.silhouette.FastSilhouetteNodeFactory"/>
+            factory-class="com.mind_era.knime.silhouette.FastSilhouetteNodeFactory"/>
    </extension>
    
 </plugin>
